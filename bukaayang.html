@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #f0f0f0;
+      overflow: hidden;
+    }
+
+    .heart {
+      position: absolute;
+      width: 150px;
+      height: 135px;
+      background-image: url('heart.png');
+      background-size: cover;
+      animation: floatHeart 4s infinite alternate;
+    }
+
+    .message {
+      position: absolute;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+      color: #e74c3c;
+      animation: fadeInMessage 2s ease-in-out 4s forwards;
+      opacity: 0;
+    }
+
+    .highlight {
+      color: #c0392b;
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .user-image {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    @keyframes floatHeart {
+      0%, 100% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes fadeInMessage {
+      to {
+        opacity: 1;
+      }
+    }
+  </style>
+  <title>Love Animation for My Beloved</title>
+</head>
+<body>
+  <div class="heart"></div>
+  <div class="message">
+    <p>MAKASI YA SAYANGKU <span class="highlight"><br>SEJAUH INI UDAH </span><br> SAMA - SAMA TERUS </p>
+  </div>
+  <div class="image-container">
+    <img class="user-image" src="p2.jpg" alt="Foto Anda dan Kekasih">
+  </div>
+</body>
+</html>
